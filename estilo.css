@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    width: 100%;
+    height: 85px;
+    transition: 250ms;
+}
+
+#menu img{
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-self: center;
+    margin-left: 22px;
+    width: 12%;
+}
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 600ms; 
+}
+
+#menu li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#menu a:hover{
+    color: #64ff6a;
+}
+
+.botao-login {
+    background: linear-gradient(to bottom left, #64ff6a 25%, #f675fd);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #700276;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-login:hover{
+    background: transparent;
+    border: 2px solid #64ff6a;
+    color: #64ff6a;
+
+}
+
+/*PRODUTOS*/
+
+#corpo-produto{
+    background-color:#0B0029;
+
+}
+#header-produtos{
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.botao-login {
+    background: linear-gradient(to bottom left, #64ff6a 25%, #f675fd);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #700276;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 105px;
+    height: 40px;
+    transition: background 500ms, color 500ms;
+}
+
+.botao-login:hover{
+    background: transparent;
+    border: 2px solid #64ff6a;
+    color: #64ff6a;
+
+}
+
+@keyframes animation-foguete{
+    from{
+        top:0px;
+        bottom: 0px;
+        right: 0px;
+    }
+    to{
+        top: -200px;
+        bottom: -200px;
+        right: -200px;
+
+    }
+} 
+
+@keyframes animation-foguete2{
+    from{
+        top:0px;
+        bottom: 0px;
+    }
+    to{
+        top: 20px;
+        bottom: 20px;
+
+    }
+} 
+
+
+
+.img-header-produtos{
+    width: 40%;
+    margin-top: 200px;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    animation: animation-foguete 3s 0s 1 alternate-reverse , animation-foguete2 2s 4s infinite alternate;
+   
+}
+
+@keyframes animation-box{
+    from{
+        right:0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
+    to{
+        right: 200px;
+        left:100px;
+        top: 20px;
+        bottom: 20px;
+    }
+}
+
+.frase-header-produtos{
+    width: 43%;
+    margin-top: 100px;
+    float: left;
+    margin-left: 40px;
+    animation: animation-box 3s 0s 1 alternate-reverse;
+    position: relative;
+}
+
+@keyframes animation-frase{
+    from{
+        top: 0px;
+        bottom: 0px;
+    }
+    to{
+        top: 200px;
+        bottom: 100px;
+
+    }
+} 
+
+.frase-header-produtos img{
+    width: 100%;
+    position: relative;
+    animation: animation-frase 3s 0s 1 alternate-reverse , animation-frase2 2s 4s infinite alternate;
+}
+
+.descricao{
+    color: #ffffff;
+    margin:0;
+    font-size: 20px;
+    padding-left: 35px;
+    line-height: 25px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.clear{
+    clear:both;
+}
+
+/* FIM CSS - HEADER */
+
+a.botao-cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .botao-cadastro:hover{
+    text-decoration: none;
+    }
+
+    a.botao-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .botao-login:hover{
+        text-decoration: none;
+        }
+    
+
+#lua{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+#lua>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+ 
+   
+  
+
+}
+
+#marte{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#marte>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+   
+  
+
+}
+
+#jupter{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#jupter>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+   
+  
+
+}
+
+#produtos .container h1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+/*COMEÇO DA ROW LUA*/
+
+
+.planetasd{
+    display: flex;
+    width: 100%;
+  
+}
+/*COLOCA DISPLAY FLEX NA DIV E JUSTIFY CONTET NO CARD*/
+.planetase{
+    display: flex;
+    width: 100%;
+   
+    
+
+}
+#cursos-lua{
+    justify-content: center;
+    gap: 200px;
+ 
+
+}
+
+
+#cursos-lua .col-md-3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 40px;
+   
+
+}
+
+#cursos-lua h3{
+    margin-top: 20px;
+}
+
+
+#cursos-lua p{
+    font-size: 18px;
+}
+
+#cursos-lua button{
+    background: linear-gradient(to bottom left, #64ff6a 25%, #f675fd);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #700276;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/*FIM DA ROW LUA*/
+
+/*COMEÇO DE MARTE*/
+
+
+#cursos-marte{
+    justify-content: center;
+    gap: 200px;
+
+}
+
+#cursos-marte .col-md-3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 40px;
+   
+
+}
+
+#cursos-marte h3{
+    margin-top: 20px;
+}
+
+#cursos-marte p{
+    font-size: 18px;
+}
+
+#cursos-marte button{
+    background: linear-gradient(to bottom left, #64ff6a 25%, #f675fd);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #700276;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/*FIM DE MARTE*/
+
+
+#cursos-jupter{
+    justify-content: center;
+    gap: 200px;
+    
+
+}
+
+#cursos-jupter .col-md-3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    padding: 15px;
+    margin-top: 40px;
+   
+}
+
+#cursos-jupter h3{
+    margin-top: 20px;
+}
+
+#cursos-jupter p{
+    font-size: 18px;
+}
+
+#cursos-jupter button{
+    background: linear-gradient(to bottom left, #64ff6a 25%, #f675fd);
+    font-family:'Roboto', sans-serif;
+    font-weight: 400;
+    border: none;
+    color: #700276;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/* SLIDE DE FOTOS CURSOS */
+
+.carousel-item h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 5px 10px #000000;
+}
+
+.carousel-item p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-shadow: 2px 5px 10px #000000;
+}
